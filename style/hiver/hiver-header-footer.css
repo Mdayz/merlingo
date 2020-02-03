@@ -1,0 +1,162 @@
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: "ABeeZee", sans-serif;
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+nav {
+  background: linear-gradient(to top, #0e8aff, #39a2ff);
+  /* background-color: #2496fa; */
+}
+
+img.navlogo {
+  z-index: 1;
+  max-width: 200px;
+  margin-left: 2em;
+  padding: 0.3em 0;
+  transition: filter 0.2s ease-out;
+}
+
+img.navlogo:hover {
+  filter: invert(5%);
+  cursor: pointer;
+  transition: all 0.2s ease-out;
+}
+
+ul.navbar {
+  margin-right: 2em;
+}
+
+li.item {
+  color: whitesmoke;
+  display: inline-block;
+  font-size: 14px;
+  text-transform: none;
+}
+
+footer#footer1 {
+  padding: 1em 1em;
+  background: linear-gradient(to top, #0e8aff, #39a2ff);
+  color: whitesmoke;
+}
+
+div#company-footer {
+  max-width: 1300px;
+  margin: auto;
+}
+
+footer#footer2 {
+  padding: 0.8em 1em;
+  background-color: rgb(32, 32, 32);
+}
+
+div#dev-footer {
+  max-width: 1300px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: whitesmoke;
+  text-align: end;
+}
+
+p#lovenote {
+  font-size: 12px;
+  order: 1;
+}
+
+svg#heart {
+  width: 20px;
+  height: auto;
+  vertical-align: -0.45em;
+}
+
+a.icons-ref {
+  font-size: 8px;
+  opacity: 0.3;
+  padding-top: 0.5em;
+}
+
+@media screen and (min-width: 1200px) {
+  nav {
+    padding: 0.2em 0;
+  }
+
+  div#menu {
+    margin: auto;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  li.item {
+    padding: 0em 1.1em;
+  }
+}
+
+@media screen and (min-width: 930px) and (max-width: 1199px) {
+  div#menu {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  img.navlogo {
+    margin-left: 2em;
+    padding: 0.3em 0;
+  }
+
+  li.item {
+    padding: 0 0.8em;
+  }
+}
+
+@media screen and (max-width: 929px) {
+  img.navlogo {
+    margin-left: 5em;
+    padding: 0.5em 1.5em 0 0;
+  }
+
+  ul.navbar {
+    list-style-type: none;
+    z-index: 1;
+    margin: 0;
+    padding: 0 3em 1em 0;
+  }
+
+  li.item {
+    display: block;
+    width: 100px;
+    margin-left: 4.4em;
+    padding: 0.7em;
+    font-size: 16px;
+    text-transform: none;
+    transition: all 0.3s ease-out;
+  }
+}

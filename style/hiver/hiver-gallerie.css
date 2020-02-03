@@ -1,0 +1,804 @@
+header {
+  background-image: url("../../image/hiver/alaska.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: 65%;
+}
+
+div#container {
+  margin: 0;
+  padding: 0;
+}
+
+section#landing {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  text-shadow: 2px 1px 6px rgb(0, 85, 182);
+  padding: 11em 0 8em 0;
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 72px;
+}
+
+p.click {
+  padding-top: 1.5em;
+  color: rgb(255, 255, 255);
+  font-family: "Manjari", sans-serif;
+  font-size: 32px;
+  font-weight: normal;
+}
+
+img.icon {
+  padding-bottom: 20px;
+  width: 110px;
+  transition: all 50ms ease-out;
+}
+
+img.icon:hover {
+  transform: scale(1.5);
+  transition: all 50ms ease-out;
+  cursor: pointer;
+}
+
+span.texthover:after {
+  content: "let's go";
+}
+
+span.texthover:hover::after {
+  content: "Allons-y";
+  cursor: pointer;
+}
+
+div#funnel {
+  padding-top: 2em;
+}
+
+h3#h3 {
+  align-self: center;
+  font-family: "Raleway", sans-serif;
+  font-size: 1em;
+  border-radius: 9999px;
+  padding: 1em 2em;
+  margin: 0;
+  background-color: #379af7;
+  color: whitesmoke;
+  text-align: center;
+}
+
+h3#h3:hover {
+  transition: all ease-out 50ms;
+  background: linear-gradient(#379af7, #1487f1);
+}
+
+main {
+  background: url("../../logo-icon/hiver/airplanes_background1.svg");
+  background-size: cover;
+  background-position-y: center;
+  background-attachment: scroll;
+  margin: 0;
+  padding-top: 3.2em;
+  padding-bottom: 6em;
+}
+
+section#content {
+  margin: 0 auto;
+  max-width: 1400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2 {
+  padding-top: 1em;
+  text-align: center;
+}
+
+ul#destinations {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  scroll-behavior: smooth;
+}
+
+li.selector {
+  margin: 2em 0;
+  padding: 2em 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-style: solid;
+  border-width: 8px 0;
+  border-color: transparent;
+  border-radius: 4% 2%;
+}
+
+ul#destinations li:nth-of-type(2) {
+  transition: all ease-out 200ms;
+  border-style: solid;
+  border-width: 8px;
+  border-radius: 4% 2%;
+  margin-right: 0.8em;
+  margin-left: 0.8em;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+}
+
+a.destination {
+  text-align: center;
+  font-size: 1.1em;
+  border-radius: 9999px;
+  padding: 0.5em 1em;
+  margin: 0 0 2rem 0;
+  background-color: #379af7;
+  color: whitesmoke;
+}
+
+a.destination:hover {
+  transition: all ease-out 50ms;
+  background: linear-gradient(#379af7, #50aaff);
+  text-shadow: 1px 2px 5px rgb(141, 219, 255);
+}
+
+figure.whiteoverlay {
+  position: relative;
+  margin: 0.2em 0;
+}
+
+div.overlay {
+  width: 400px;
+  height: 300px;
+  border-radius: 5%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: 0.3s ease;
+  background-color: #ffffffea;
+}
+
+figure.whiteoverlay:hover .overlay {
+  opacity: 1;
+}
+
+img.place {
+  width: 400px;
+  height: 300px;
+  border-radius: 5%;
+  box-shadow: 5px 4px 15px rgba(154, 198, 255, 0.315),
+    -5px -5px 10px rgba(154, 198, 255, 0.315);
+}
+
+div.figure-details {
+  position: absolute;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 100%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+figure.whiteoverlay:hover .figure-details {
+  left: 50%;
+  top: 50%;
+  opacity: 1;
+}
+
+.figure-details h3 {
+  color: black;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+}
+
+.figure-details p {
+  color: black;
+  font-size: 1em;
+}
+
+.fadeIn-bottom {
+  top: 80%;
+}
+
+h3.figure-title3 {
+  line-height: 1.4em;
+}
+
+figure.gmap {
+  margin: 0;
+  padding: 0 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+iframe {
+  width: 400px;
+  height: 300px;
+  border-radius: 5%;
+  box-shadow: 5px 4px 15px rgba(154, 198, 255, 0.315),
+    -5px -5px 10px rgba(154, 198, 255, 0.315);
+}
+
+@media screen and (min-width: 1200px) {
+  span#selection1,
+  span#selection2,
+  span#selection3,
+  span#selection4,
+  span#selection5,
+  span#selection6 {
+    border: solid 1px transparent;
+    border-radius: 5%;
+    padding: 0.5em 1.3em;
+    cursor: pointer;
+  }
+
+  span#selection2 {
+    border: solid 1px;
+  }
+
+  li.item:nth-of-type(1),
+  li.item:nth-of-type(3),
+  li.item:nth-of-type(4),
+  li.item:nth-of-type(5),
+  li.item:nth-of-type(6) {
+    margin-bottom: -18px;
+    padding-bottom: 1em;
+    border-bottom: solid 1px #0e8bff00;
+  }
+
+  li.item:nth-of-type(1):hover,
+  li.item:nth-of-type(3):hover,
+  li.item:nth-of-type(4):hover,
+  li.item:nth-of-type(5):hover,
+  li.item:nth-of-type(6):hover {
+    margin-bottom: -18px;
+    padding-bottom: 1em;
+    border-bottom: solid 1px;
+    cursor: pointer;
+    transition: all 150ms ease-out;
+  }
+
+  ul#destinations li:nth-of-type(2):hover {
+    position: relative;
+    transition: all ease-out 200ms;
+    border-color: #379af7 #3ca1ff #57aeff;
+  }
+
+  ul#destinations li:nth-of-type(2):hover::before {
+    transition: all ease-out 200ms;
+    z-index: 9999;
+    position: absolute;
+    top: -1.4em;
+    background-color: #379af7;
+    color: white;
+    font-size: 1.1em;
+    text-shadow: 0px 2px 5px rgb(197, 237, 255);
+    border-radius: 9999px;
+    padding: 0.5em 5em;
+    content: "";
+    animation: 1.3s ease-in-out 10ms infinite backwards running blinker;
+    color: #ffffff;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px rgb(204, 231, 247),
+      0 0 20px #97cdff, 0 0 30px #8cdbff, 0 0 40px #ffffff, 0 0 55px #ffffff,
+      0 0 75px #e1f8ff;
+  }
+
+  @keyframes blinker {
+    0% {
+      content: "Meilleure Offre !";
+      white-space: pre;
+    }
+
+    25% {
+      content: "Meilleure Offre !";
+      white-space: pre;
+      text-shadow: 25%;
+    }
+
+    50% {
+      content: "Meilleure Offre !";
+      white-space: pre;
+      text-shadow: none;
+    }
+
+    75% {
+      content: "Meilleure Offre !";
+      white-space: pre;
+      text-shadow: 75%;
+    }
+
+    100% {
+      content: "Meilleure Offre !";
+      white-space: pre;
+    }
+  }
+
+  a.price {
+    text-align: center;
+    font-size: 1.2em;
+    border-radius: 9999px;
+    padding: 0.5em 1em;
+    margin: 1.2em 0 1.8em 0;
+    background-color: #379af7;
+    color: whitesmoke;
+    transition: transform ease-out 200ms, text-shadow ease-out 300ms;
+    /* animation: 2s ease-in-out 20ms 2 alternate running zoom; */
+  }
+
+  @keyframes zoom {
+    0% {
+      transform: scale(1);
+    }
+
+    50% {
+      transform: scale(1.5);
+    }
+
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  a.price:hover {
+    transition: transform ease-out 200ms, text-shadow ease-out 300ms;
+    background: linear-gradient(#379af7, #1487f1);
+    text-shadow: 1px 2px 5px rgb(141, 219, 255);
+    transform: scale(1.2);
+  }
+
+  a.price:hover::after {
+    position: absolute;
+    top: 2em;
+    right: -0.1em;
+    transition: all ease-in-out 200ms;
+    transform: scale(0.9);
+    /* display: block; */
+    content: "";
+    background: linear-gradient(#379af7, #1487f1);
+    border-radius: 30px 10px;
+    padding: 0.8em 1em;
+    animation: 10ms ease-out 10ms 1 both running fadeinout;
+  }
+
+  @keyframes fadeinout {
+    0% {
+      opacity: 0;
+      content: "7 nuits";
+      text-shadow: none;
+      white-space: pre;
+    }
+
+    50% {
+      opacity: 1;
+      content: "7 nuits";
+      white-space: pre;
+    }
+
+    100% {
+      opacity: 1;
+      content: "7 nuits";
+      white-space: pre;
+    }
+  }
+}
+
+@media screen and (min-width: 930px) and (max-width: 1199px) {
+  span#selection1,
+  span#selection2,
+  span#selection3,
+  span#selection4,
+  span#selection5,
+  span#selection6 {
+    border: solid 1px transparent;
+    border-radius: 5%;
+    padding: 0.5em 1.3em;
+    cursor: pointer;
+  }
+
+  span#selection2 {
+    border: solid 1px;
+  }
+
+  li.item:nth-of-type(1),
+  li.item:nth-of-type(3),
+  li.item:nth-of-type(4),
+  li.item:nth-of-type(5),
+  li.item:nth-of-type(6) {
+    margin-bottom: -18px;
+    padding-bottom: 1em;
+    border-bottom: solid 1px #0e8bff00;
+  }
+
+  li.item:nth-of-type(1):hover,
+  li.item:nth-of-type(3):hover,
+  li.item:nth-of-type(4):hover,
+  li.item:nth-of-type(5):hover,
+  li.item:nth-of-type(6):hover {
+    margin-bottom: -18px;
+    padding-bottom: 1em;
+    border-bottom: solid 1px;
+    cursor: pointer;
+    transition: all 0.1s ease-out 20ms;
+  }
+
+  h2 {
+    margin-bottom: 1.5em;
+  }
+
+  ul#destinations li:nth-of-type(2) {
+    position: relative;
+    transition: all ease-out 200ms;
+    border-color: #379af7 #3ca1ff #57aeff;
+  }
+
+  ul#destinations li:nth-of-type(2)::before {
+    transition: all ease-out 200ms;
+    z-index: 9999;
+    position: absolute;
+    top: -1.4em;
+    background-color: #379af7;
+    color: white;
+    font-size: 1.1em;
+    text-shadow: 1px 2px 5px rgb(141, 219, 255);
+    border-radius: 9999px;
+    padding: 0.5em 5em;
+    content: "";
+    animation: 1.3s ease-in-out 10ms infinite backwards running blinker;
+    color: #ffffff;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px rgb(204, 231, 247),
+      0 0 20px #97cdff, 0 0 30px #8cdbff, 0 0 40px #ffffff, 0 0 55px #ffffff,
+      0 0 75px #e1f8ff;
+  }
+
+  @keyframes blinker {
+    0% {
+      content: "Meilleure Offre !";
+      white-space: pre;
+    }
+
+    25% {
+      content: "Meilleure Offre !";
+      white-space: pre;
+      text-shadow: 25%;
+    }
+
+    50% {
+      content: "Meilleure Offre !";
+      white-space: pre;
+      text-shadow: none;
+    }
+
+    75% {
+      content: "Meilleure Offre !";
+      white-space: pre;
+      text-shadow: 75%;
+    }
+
+    100% {
+      content: "Meilleure Offre !";
+      white-space: pre;
+    }
+  }
+
+  li.selector {
+    margin: 0;
+  }
+
+  a.price {
+    text-align: center;
+    font-size: 1.2em;
+    border-radius: 30px 10px;
+    padding: 0.5em 1em;
+    margin: 1.2em 0 1.8em 0;
+    background-color: #379af7;
+    color: whitesmoke;
+    transition: transform ease-out 200ms, text-shadow ease-out 300ms;
+    /* animation: 2s ease-in-out 20ms 2 alternate running zoom; */
+  }
+
+  @keyframes zoom {
+    0% {
+      transform: scale(1);
+    }
+
+    50% {
+      transform: scale(1.5);
+    }
+
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  a.price:hover {
+    transition: transform ease-out 200ms, text-shadow ease-out 300ms;
+    background: linear-gradient(#379af7, #1487f1);
+    text-shadow: 1px 2px 5px rgb(141, 219, 255);
+    transform: scale(1.2);
+  }
+
+  a.price::after {
+    transition: all ease-in-out 200ms;
+    display: block;
+    content: "";
+    animation: 10ms ease-out 0ms 1 forwards running fadeinout;
+  }
+
+  @keyframes fadeinout {
+    0% {
+      text-shadow: none;
+      content: "7 nuits";
+      opacity: 0;
+    }
+
+    50% {
+      opacity: 1;
+      content: "7 nuits";
+    }
+
+    100% {
+      opacity: 1;
+      content: "7 nuits";
+    }
+  }
+}
+
+@media screen and (max-width: 929px) {
+  span#selection2 {
+    border-bottom: solid 1px;
+    padding: 5px 0;
+    padding-right: 25px;
+  }
+
+  li.item:nth-of-type(1),
+  li.item:nth-of-type(3),
+  li.item:nth-of-type(4),
+  li.item:nth-of-type(5),
+  li.item:nth-of-type(6) {
+    border-left: solid 1px transparent;
+    border-radius: 90%;
+    border-left: solid transparent 1px;
+  }
+
+  li.item:nth-of-type(1):hover,
+  li.item:nth-of-type(3):hover,
+  li.item:nth-of-type(4):hover,
+  li.item:nth-of-type(5):hover,
+  li.item:nth-of-type(6):hover {
+    transition: border 50ms ease-out 50ms, padding 0.3s ease-out 50ms,
+      margin 0.3s ease-out 50ms;
+    border-radius: 90%;
+    margin-left: 4.6em;
+    padding-left: 0.8em;
+    border-left: solid 1px;
+    cursor: pointer;
+  }
+
+  li.item:nth-of-type(1):active,
+  li.item:nth-of-type(3):active,
+  li.item:nth-of-type(4):active,
+  li.item:nth-of-type(5):active,
+  li.item:nth-of-type(6):active {
+    /* transition: margin 200ms ease-out 50ms, ; */
+    padding-left: 0.8em;
+    animation: 1000ms ease-out 50ms gone;
+  }
+
+  @keyframes gone {
+    0% {
+      margin-left: 4.6em;
+    }
+
+    50% {
+      margin: 1.2em 9em;
+    }
+
+    60% {
+      margin: 1.2em 20em;
+    }
+
+    100% {
+      margin: 1.2em 80em;
+    }
+  }
+
+  header {
+    background-image: url("../../image/hiver/alaska.jpg");
+    background-size: auto contain;
+    background-repeat: no-repeat;
+    background-position: top;
+  }
+
+  section#landing {
+    width: 100%;
+    color: white;
+    padding: 6em 0 2em 0;
+  }
+
+  h1 {
+    font-weight: 600;
+    font-size: 3em;
+  }
+
+  p.click {
+    padding-top: 1.5em;
+    color: rgb(255, 255, 255);
+    font-family: "Manjari", sans-serif;
+    font-size: 32px;
+    font-weight: normal;
+  }
+
+  img.icon {
+    padding-bottom: 20px;
+    width: 40%;
+    transition: all 50ms ease-out;
+  }
+
+  h3#h3 {
+    font-size: 0.9em;
+  }
+
+  ul#destinations li:nth-of-type(2) {
+    position: relative;
+    transition: all ease-out 200ms;
+    border-color: #379af7 #3ca1ff #57aeff;
+  }
+
+  ul#destinations li:nth-of-type(2)::before {
+    transition: all ease-out 200ms;
+    z-index: 9999;
+    position: absolute;
+    top: -1.4em;
+    background-color: #379af7;
+    color: white;
+    font-size: 1.1em;
+    text-shadow: 1px 2px 5px rgb(141, 219, 255);
+    border-radius: 9999px;
+    padding: 0.5em 11.5vw;
+    content: "";
+    animation: 1.3s ease-in-out 10ms infinite backwards running blinker;
+    color: #ffffff;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px rgb(204, 231, 247),
+      0 0 20px #97cdff, 0 0 30px #8cdbff, 0 0 40px #ffffff, 0 0 55px #ffffff,
+      0 0 75px #e1f8ff;
+  }
+
+  @keyframes blinker {
+    0% {
+      content: "Meilleure Offre !";
+      white-space: pre;
+    }
+
+    25% {
+      content: "Meilleure Offre !";
+      white-space: pre;
+      text-shadow: 25%;
+    }
+
+    50% {
+      content: "Meilleure Offre !";
+      white-space: pre;
+      text-shadow: none;
+    }
+
+    75% {
+      content: "Meilleure Offre !";
+      white-space: pre;
+      text-shadow: 75%;
+    }
+
+    100% {
+      content: "Meilleure Offre !";
+      white-space: pre;
+    }
+  }
+
+  li.selector {
+    margin: 0;
+  }
+
+  div.overlay {
+    width: 100%;
+    height: auto;
+    min-height: 50vw;
+    max-width: 70vw;
+  }
+
+  img.place {
+    width: 100%;
+    height: auto;
+    min-height: 50vw;
+    max-width: 70vw;
+  }
+
+  img.place2 {
+    max-height: 46.685vw;
+  }
+
+  a.price {
+    text-align: center;
+    font-size: 1.2em;
+    border-radius: 30px 10px;
+    padding: 0.5em 1em;
+    margin: 1.2em 0 1.8em 0;
+    background-color: #379af7;
+    color: whitesmoke;
+    transition: transform ease-out 200ms, text-shadow ease-out 300ms;
+    /* animation: 2s ease-in-out 20ms 2 alternate running zoom; */
+  }
+
+  @keyframes zoom {
+    0% {
+      transform: scale(1);
+    }
+
+    50% {
+      transform: scale(1.5);
+    }
+
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  a.price:hover {
+    transition: transform ease-out 200ms, text-shadow ease-out 300ms;
+    background: linear-gradient(#379af7, #1487f1);
+    text-shadow: 1px 2px 5px rgb(141, 219, 255);
+    transform: scale(1.2);
+  }
+
+  a.price::after {
+    transition: all ease-in-out 200ms;
+    display: block;
+    content: "";
+    animation: 10ms ease-out 0ms 1 forwards running fadeinout;
+  }
+
+  @keyframes fadeinout {
+    0% {
+      text-shadow: none;
+      content: "7 nuits";
+      opacity: 0;
+    }
+
+    50% {
+      opacity: 1;
+      content: "7 nuits";
+    }
+
+    100% {
+      opacity: 1;
+      content: "7 nuits";
+    }
+  }
+
+  figure.gmap {
+    padding: 1em 0;
+  }
+
+  iframe {
+    min-height: 50.802vw;
+    width: 300%;
+    max-width: 70vw;
+    max-height: 50vw;
+  }
+}
